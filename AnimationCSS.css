@@ -1,7 +1,23 @@
 /* CSS Document */
 
 
+body{
 
+
+background-color: black;
+height:100%;
+width:100%;
+padding: 10%;
+
+
+}
+
+.Animation{
+
+position:relative;
+top:0;
+left:0;
+}
 
 .BigCircle{
 position: absolute;
@@ -24,26 +40,30 @@ animation-direction: reverse;
 @keyframes BigCircleRotation { 100%  {transform:rotate(360deg); } }
 
 
+
 .SmallGreenCircle{
 
 position: absolute;
-top: 120px;
-left: 115px;
-padding:20%;
+top: 245px;
+left: 245px;
+width: 85px;
+height: 85px;
+background: url("gears.png") -1px -857px;
 
 }
 
 .SmallGreenGear{
 
 position: absolute;
-top: 130px;
-left: 126px;
-padding:20%;
+top: 258px;
+left: 258px;
+width: 62px;
+height: 62px;
+background: url("gears.png") 0px -745px;
 
-
--webkit-animation:SmallGreenRotation 10s linear infinite;
--moz-animation:SmallGreenRotation 10s linear infinite;
-animation:SmallGreenRotation 10s linear infinite;
+-webkit-animation:SmallGreenRotation 7s linear infinite;
+-moz-animation:SmallGreenRotation 7s linear infinite;
+animation:SmallGreenRotation 7s linear infinite;
 webkit-animation-direction: normal; /* Chrome, Safari, Opera */
 animation-direction: normal;
 }
@@ -52,13 +72,18 @@ animation-direction: normal;
 @-webkit-keyframes SmallGreenRotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes SmallGreenRotation { 100%  {transform:rotate(360deg); } }
 
+
+
+
 .BigBlueGear{
 
 position: absolute;
-top: 230px;
-left: 150px;
-opacity: 0.9;
-padding:20%;
+top: 350px;
+left: 300px;
+width: 164px;
+height: 164px;
+background: url("gears.png") 0px -530px;
+
 :BigBlueGearRotation 7s linear infinite;
 -moz-animation:BigBlueGearRotation 7s linear infinite;
 animation:BigBlueGearRotation 7s linear infinite;
@@ -71,12 +96,16 @@ animation-direction: normal;
 @-webkit-keyframes BigBlueGearRotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes BigBlueGearRotation { 100%  {transform:rotate(360deg); } }
 
+
 .MediumGreenGear{
 
 position: absolute;
-top: 250px;
-left: 170px;
-padding:20%;
+top: 367px;
+left: 322px;
+width: 125px;
+height: 124px;
+background: url("gears.png") 0px -352px;
+
 -webkit-animation:MediumGreenGearRotation 7s linear infinite;
 -moz-animation:MediumGreenGearRotation 7s linear infinite;
 animation:MediumGreenGearRotation 7s linear infinite;
@@ -89,39 +118,60 @@ animation-direction: reverse;
 @-webkit-keyframes MediumGreenGearRotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes MediumGreenGearRotation { 100%  {transform:rotate(360deg); } }
 
-.SmallBlueGear{
+.SmallBlueGear,.SmallBlueGear2,.SmallBlueGear3{
 
 position: absolute;
-top: 278px;
-left: 197px;
-padding:20%;
+top: 395px;
+left: 350px;
+width: 72px;
+height: 72px;
+background: url("gears.png") -372px -159px;
+
 -webkit-animation:SmallBlueGearRotation 7s linear infinite;
 -moz-animation:SmallBlueGearRotation 7s linear infinite;
 animation:SmallBlueGearRotation 7s linear infinite;
 webkit-animation-direction: normal; /* Chrome, Safari, Opera */
 animation-direction: normal;
-
 }
 
 @-moz-keyframes SmallBlueGearRotation { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes SmallBlueGearRotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes SmallBlueGearRotation { 100%  {transform:rotate(360deg); } }
 
+.SmallBlueGear2{
+
+top: 134px;
+left: 117px;
+
+}
+
+.SmallBlueGear3{
+
+top: 30px;
+left: 510px;
+}
+
 .DualGears{
 
 position: absolute;
-top: -130px;
-left: 110px;
-padding:20%;
+top: -10px;
+left: 240px;
+width: 314px;
+height: 602px;
+background: url("gears.png") -373px -900px;
+opacity:0.5;
 
 }
 
 .MediumGapGear{
 
 position: absolute;
-top: 235px;
-left: 17px;
-padding:20%;
+top: 360px;
+left: 175px;
+width: 135px;
+height: 134px;
+background: url("gears.png") 0px 0px;
+
 -webkit-animation:MediumGapGearRotation 7s linear infinite;
 -moz-animation:MediumGapGearRotation 7s linear infinite;
 animation:MediumGapGearRotation 7s linear infinite;
@@ -135,7 +185,92 @@ animation-direction: reverse;
 @keyframes MediumGapGearRotation { 100%  {transform:rotate(360deg); } }
 
 
+.BlueGearHole,.BlueGearHole2{
 
+position: absolute;
+top: 100px;
+left: 85px;
+width: 134px;
+height: 135px;
+background: url("gears.png") 0px -1746px;
+
+-webkit-animation:BlueGearHoleRotation 7s linear infinite;
+-moz-animation:BlueGearHoleRotation 7s linear infinite;
+animation:BlueGearHoleRotation 7s linear infinite;
+webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+animation-direction: reverse;
+
+}
+@-moz-keyframes BlueGearHoleRotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes BlueGearHoleRotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes BlueGearHoleRotation { 100%  {transform:rotate(360deg); } }
+
+.BlueGearHole2{
+
+top: 0px;
+left: 480px;
+}
+
+.BlueCircleGear{
+position: absolute;
+top: 38px;
+left: 278px;
+width: 234px;
+height: 234px;
+background: url("gears.png") -372px -278px;
+-webkit-animation:BlueCircleGearRotation 7s linear infinite;
+-moz-animation:BlueCircleGearRotation 7s linear infinite;
+animation:BlueCircleGearRotation 7s linear infinite;
+webkit-animation-direction: normal; /* Chrome, Safari, Opera */
+animation-direction: normal;
+
+
+}
+@-moz-keyframes BlueCircleGearRotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes BlueCircleGearRotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes BlueCircleGearRotation { 100%  {transform:rotate(360deg); } }
+
+
+.LightGreenGear{
+position: absolute;
+top: 100px;
+left: 340px;
+width: 108px;
+height: 108px;
+background: url("gears.png") 320px 0px;
+
+-webkit-animation:LightGreenGearRotation 7s linear infinite;
+-moz-animation:LightGreenGearRotation 7s linear infinite;
+animation:LightGreenGearRotation 7s linear infinite;
+webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+animation-direction: reverse;
+
+
+}
+@-moz-keyframes LightGreenGearRotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes LightGreenGearRotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes LightGreenGearRotation { 100%  {transform:rotate(360deg); } }
+
+.BlueFilledGear{
+
+position: absolute;
+top: -55px;
+left: 250px;
+width: 122px;
+height: 122px;
+background: url("gears.png") 0px -185px;
+
+-webkit-animation:LightGreenGearRotation 7s linear infinite;
+-moz-animation:LightGreenGearRotation 7s linear infinite;
+animation:LightGreenGearRotation 7s linear infinite;
+webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+animation-direction: reverse;
+
+
+}
+@-moz-keyframes LightGreenGearRotation { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes LightGreenGearRotation { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes LightGreenGearRotation { 100%  {transform:rotate(360deg); } }
 
 
 
