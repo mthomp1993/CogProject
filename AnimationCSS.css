@@ -1,19 +1,15 @@
 /* CSS Document */
 
-.AnimationPositioning{
 
-position: relative; 
-left: 0; 
-top: 0;
-  
-}
+
 
 .BigCircle{
-
 position: absolute;
-left: 0;
-top: 0;
-padding:20%;
+top: 130px;
+left: 126px;
+width: 325px;
+height: 330px;
+background: url("gears.png") 0px -990px;
 
 -webkit-animation:BigCircleRotation 10s linear infinite;
 -moz-animation:BigCircleRotation 10s linear infinite;
@@ -26,7 +22,6 @@ animation-direction: reverse;
 @-moz-keyframes BigCircleRotation { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes BigCircleRotation { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes BigCircleRotation { 100%  {transform:rotate(360deg); } }
-
 
 
 .SmallGreenCircle{
